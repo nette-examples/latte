@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{block head}
+			<link rel="stylesheet" href="style.css" />
+			<title>{block title|stripHtml|trim}{/block} - My Webpage</title>
+		{/block}
+	</head>
+
+	<body>
+		<div id="content">
+			{block content}{/block}
+		</div>
+
+		<div id="footer">
+			{block footer}
+				&copy; Copyright {=date('Y')} by <a href="http://example.com">you</a>
+			{/block}
+		</div>
+	</body>
+</html>
