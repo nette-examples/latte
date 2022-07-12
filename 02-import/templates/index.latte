@@ -1,0 +1,12 @@
+{layout '@layout.latte'}
+
+{block content}
+	<h1 n:block="title">Index</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	<p>Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante.
+{/block}
+
+{block menu}
+	{include menuBuilder $menuItems, 'main-menu'}
+{/block}

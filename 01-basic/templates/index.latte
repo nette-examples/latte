@@ -1,0 +1,18 @@
+{layout '@layout.latte'}
+
+{block content}
+	<h1 n:block="title">Index</h1>
+
+	<p class="important">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	</p>
+
+	<p>Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante.
+{/block}
+
+{block head}
+	{include parent}
+	<style>
+		.important { color: #336699; }
+	</style>
+{/block}

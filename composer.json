@@ -1,0 +1,8 @@
+{
+	"name": "nette-examples/latte",
+	"type": "project",
+	"require": {
+		"php": ">=8.0",
+		"latte/latte": "^3.0"
+	}
+}
