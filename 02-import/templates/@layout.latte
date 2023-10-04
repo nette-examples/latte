@@ -1,4 +1,6 @@
+{* Import predefined blocks from '@blocks.latte' for reuse in this or child template *}
 {import '@blocks.latte'}
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,10 +12,12 @@
 
 	<body>
 		<div id="menu">
+			{* Placeholder block for menu; can be filled in child templates *}
 			{block menu /}
 		</div>
 
 		<div id="content">
+			{* Placeholder block for the main content; to be filled in child templates *}
 			{block content /}
 		</div>
 

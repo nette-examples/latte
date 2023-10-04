@@ -1,7 +1,9 @@
+{* Use the layout defined in @layout.latte *}
 {layout '@layout.latte'}
 
+{* Define the main content block *}
 {block content}
-	<h1 n:block="title">Index</h1>
+	<h1 n:block="title">Index</h1> {* Define the title block *}
 
 	<p class="important">
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -10,9 +12,10 @@
 	<p>Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante.
 {/block}
 
+{* Extend the head block from the parent layout *}
 {block head}
-	{include parent}
+	{include parent}  {* Include content from the parent block *}
 	<style>
-		.important { color: #336699; }
+		.important { color: #336699; }  {* Add additional styles *}
 	</style>
 {/block}

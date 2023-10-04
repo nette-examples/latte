@@ -1,5 +1,8 @@
+{* Define a macro to build a menu from a list of items and a CSS class *}
+
 {define menuBuilder $items, $cssClass}
 	<ul class={$cssClass}>
+		{* Loop through each menu item and render it as a list item *}
 		{foreach $items as $menuItem}
 			<li>{$menuItem}</li>
 		{/foreach}
